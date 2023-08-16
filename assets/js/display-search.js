@@ -116,7 +116,7 @@ function printResults(resultObj) {
 
 function searchApi(city=searchFormEl.value) {
   const key = "50f513c64c94131d0d46b99d505ac278";
-  fetch("http://api.openweathermap.org/geo/1.0/direct?q=" + city + ",US&limit=5&appid=" + key)
+  fetch("https://api.openweathermap.org/geo/1.0/direct?q=" + city + ",US&limit=5&appid=" + key)
     .then((response) => response.json())
     .then(function (res) {
       // resultTextEl.textContent = res.search.query;
