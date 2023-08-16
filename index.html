@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Forecast</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&family=Merriweather:wght@700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/jass.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <div class="flex-row align-center justify-center min-100-vh bg-primary">
+    <div class="col-12 col-md-9 flex-column align-center bg-light p-5">
+      <h1 class="text-primary">Weather</h1>
+      <form onsubmit="searchApi()" id="search-form" class="form w-100">
+          Enter city name: <input id="search-input" class="form-input w-100" type="text" placeholder="Search!">
+          <input type="submit">
+        
+        <!--<button class="btn btn-info btn-block">Click Me</button>-->
+      </form>
+    </div>
+  </div>
+  
+  <div class="flex-row align-center justify-center min-100-vh bg-primary">
+    <div class="col-12 col-md-9 flex-column align-center bg-light p-5">
+      
+      <table><tr>
+        <td><h1 class="text-primary">Today</h1>
+        <img id="wicon1" src='' alt="Weather icon">
+        <p id="one"></p></td>
+        <td><h1 class="text-primary">Tomorrow</h1>
+        <img id="wicon2" src='' alt="Weather icon">
+        <p id="two"></p></td>
+        <td><h1 class="text-primary">The next day</h1>
+        <img id="wicon3" src='' alt="Weather icon">
+        <p id="three"></p></td>
+        <td><h1 class="text-primary">The day after that</h1>
+        <img id="wicon4" src='' alt="Weather icon">
+        <p id="four"></p></td>
+        <td><h1 class="text-primary">The day after that one</h1>
+        <img id="wicon5" src='' alt="Weather icon">
+        <p id="five"></p></td>
+      </tr></table>
+
+    </div>
+  </div>
+
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/display-search.js"></script>
+</body>
+
+</html>
